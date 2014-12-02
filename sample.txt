@@ -1,0 +1,218 @@
+camera
+ipad
+bed
+bluetooth headset
+chrome cast
+
+
+
+int []a= new int[n];
+a[0]=0;
+a[1]=1;
+
+
+for(i=2, i<=n , i++)
+{
+
+a[i]=a[i-1]+a[i-2];
+
+}
+
+return a[n];
+)
+
+
+fn(n){
+
+if( n == 0 || n == 1)
+{
+   return n; 
+}
+
+else
+{
+  return fn(n-1) + fn(n-2);
+}
+
+}
+
+char[] c={"R","a","v","i","d"}
+s=c.length();
+m=s/2;
+for ( i=0; i<m; i++)
+{
+swap(c[i],c[s-i])
+)
+
+fn a(num){
+if(num < 100 || n > 999)
+{
+
+}
+else
+{
+for(i=0,i<3,i++)
+{
+result = result + (num%10 ^ 3);
+num=(num/10); 
+}
+ }}
+
+
+Class Stack{
+
+public Stack(int n)
+{
+int []array = new int[n];
+int pointer = 0;
+}
+
+public void push(val)
+{
+try{
+if (pointer != array.length())
+array[pointer] = val;
+pointer= pointer + 1;
+}
+catch (Exception e){
+sysout.print "Error"+e.systemerr();
+}
+}
+
+public int pop{
+pointer = pointer -1;
+return array[pointer];
+}
+
+public static void main(String args[])
+{
+
+
+
+}
+
+
+
+}
+
+
+start=0;
+end=a.length();
+while(start<end)
+{
+middle=(start+end)/2; 
+
+if(a[middle] == givennum)
+{
+return true;
+}
+elseif( a[m] > giv)
+{
+end=m;
+}
+else
+{
+start=m;
+}
+
+if( a[start] =givenum)
+return true
+else
+false
+
+Write a function for the mathematical formula, f(N) = N*(N-1)*(N-2)*…*1 to calculate a
+given number N.  
+
+public int calculate(n){
+result=1;
+for (i=n, i<1;i--)
+{
+result=calculate(i) * calculate(i-1);
+}
+} 
+
+----------------------------------------------
+class Node{
+int x;
+int y;
+
+Node(int a,int b)
+{
+	x=a;
+	y=b;
+}
+}
+public class minTriangulation {
+
+	public static void main (String args[])
+	{
+		Node[] n= {new Node(4,1), new Node(1,4), new Node(1,8), new Node(5,9), new Node(7,2)};
+		double MinPerimeter = findMin(n, 0, n.length-1);
+		System.out.println("The minimum triangulation for this polygon is: "+MinPerimeter);
+	
+	}
+	static double findMin(Node[] n, int i, int j)
+	{
+		
+		if (i+1==j) 
+			return 0;
+		else
+		{
+			int k= findK(n, i, j);
+			return findMin(n, i, k) + findMin(n, k, j) + getPerimeter(n, i, k, j);
+		}
+	}
+	
+	static int findK(Node[] n, int i, int j)
+	{
+		double minPerimeter = getPerimeter(n, i, i+1, j);
+		int k=i+1;
+		
+		double perimeter;
+		for (int a=i+2; a<j; a++)
+		{
+			perimeter= getPerimeter(n, i, a, j);
+			if(minPerimeter>perimeter)
+			k=a;
+		}
+		return k;
+	}
+	
+	static double getPerimeter(Node[] n, int i, int k, int j)
+	{
+		if(i==k||k==j||i==j) return 0;
+		else return getDistance(n[i],n[k]) + getDistance(n[k],n[j]) + getDistance (n[i],n[j]);
+	}
+	
+	static double getDistance(Node a, Node b)
+	{
+		return Math.sqrt( ((a.x-b.x)*(a.x-b.x)) + ((a.y-b.y)*(a.y-b.y)));
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
